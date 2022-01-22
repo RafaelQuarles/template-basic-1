@@ -63,6 +63,9 @@ img {
     padding: 0 20px;
 	float: none !important; 
 }
+button {
+    cursor: pointer;
+}
 
 
 /* navbar section */
@@ -218,3 +221,81 @@ width: 100%;
 /* ----------- */
 
 /* section two */
+.sec2 {
+    background-color: var(--bgcolor-quote);
+    padding: 80px;
+}
+.sec2 > .content{
+    max-width: 700px;
+}
+.sec2 .quote {
+    font-size: 28px;
+    font-style: italic;
+    color: var(--text-dark);
+    line-height: 34px;
+}
+.sec2 .subquote {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: -4px;
+    margin-right: 20px;
+}
+@media (max-width: 767.98px) {
+    .sec2 {
+        background-color: var(--bgcolor-quote);
+        padding: 80px 20px;
+    }
+    .sec2 .quote {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .sec2 .subquote {
+        font-size: 18px;
+        margin-top: 4px;
+        margin-right: 10px;
+    }
+}
+/* ----------- */
+
+/* section three */
+.sec3 {
+    color: var(--text-primary);
+}
+.sec3 .container {
+    background-color: var(--tirtiary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 50px 100px;
+    border-radius: 12px;
+}
+.sec3 .right {
+    margin: auto 0;
+}
+.sec3 button {
+    background-color: var(--button);
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 8px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+.sec3 button:hover {
+    background-color: var(--text-primary);
+    color: var(--button);
+}
+@media (max-width: 767.98px) {
+    .sec3 .container {
+        flex-direction: column;
+        padding: 40px;
+        gap: 20px;
+    }
+    .sec3 .left h1{
+        margin-bottom: 8px;
+    }
+}
+
