@@ -298,4 +298,12 @@ width: 100%;
         margin-bottom: 8px;
     }
 }
+/* ----------- */
 
+/* footer */
+footer {
+    background-color: var(--bgcolor-dark);
+    color: var(--text-primary);
+    padding: 20px 0;
+    display: flex;
+}
