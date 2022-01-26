@@ -7,8 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
+<body>    
     <nav>
         <div class="content navbar">
             <div class="logo">Header <span>L</span>ogo</div>
@@ -20,7 +19,7 @@
         </div>
     </nav>
 
-    <div class="hero">
+    <div class="hero" id="birds-bg">
         <div class="content">
             <div class="left">
                 <div class="title">This website is a basic one</div>
@@ -84,5 +83,25 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+    VANTA.BIRDS({
+      el: "#birds-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 0.50,
+      color1: 0x295aa8,
+      color2: 0x1F2937,
+      quantity: 3.00,
+      backgroundAlpha: 0.00,
+      speedLimit: 2.00,
+      birdSize: 1.50
+    })
+    </script>
 </body>
 </html>
