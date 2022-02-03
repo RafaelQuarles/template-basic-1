@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dark.css">
+    
+
 </head>
 <body>    
+
+    <!-- ================================== -->
+    <!--             NAVIGATION             -->
+    <!-- ================================== -->
     <nav>
         <div class="content navbar">
             <div class="logo">Header <span>L</span>ogo</div>
@@ -15,15 +22,27 @@
                 <a class="link" href="">header link one</a>
                 <a class="link" href="">header link two</a>
                 <a class="link" href="">header link three</a>
+
+                <!-- DARK MODE TOGGLE -->
+                <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+                    <span aria-hidden="true" class="dark-toggle">
+                        <span class="DTspan"></span>
+                    </span>
+                </button>
+                
             </div>
         </div>
     </nav>
+
+    <!-- ================================== -->
+    <!--              LANDING               -->
+    <!-- ================================== -->
 
     <div class="hero" id="birds-bg">
         <div class="content">
             <div class="left">
                 <div class="title">This website is a basic one</div>
-                <div class="subtitle">This website has some subtext that goes here under the main title. It's a smaller font and the solor is lower contrast</div>
+                <div class="subtitle">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</div>
                 <button>Sign up</button>
             </div>
             <div class="right">
@@ -32,29 +51,37 @@
         </div>
     </div>
 
+    <!-- ================================== -->
+    <!--             SECTION 1              -->
+    <!-- ================================== -->
+
     <div class="sec1">
         <div class="content">
             <div class="title">Some random information.</div>
             <div class="quad">
                 <div class="unit">
                     <img src="https://www.mcicon.com/wp-content/uploads/2020/12/Animal_Penguin_1-copy-5.jpg" alt="">
-                    <div class="subtext">unit numero uno</div>
+                    <div class="subtext">numero uno</div>
                 </div>
                 <div class="unit">
                     <img src="https://www.mcicon.com/wp-content/uploads/2020/12/Animal_Penguin_1-copy-5.jpg" alt="">
-                    <div class="subtext">unit numero dos</div>
+                    <div class="subtext">numero dos</div>
                 </div>
                 <div class="unit">
                     <img src="https://www.mcicon.com/wp-content/uploads/2020/12/Animal_Penguin_1-copy-5.jpg" alt="">
-                    <div class="subtext">unit numero tres</div>
+                    <div class="subtext">numero tres</div>
                 </div>
                 <div class="unit">
                     <img src="https://www.mcicon.com/wp-content/uploads/2020/12/Animal_Penguin_1-copy-5.jpg" alt="">
-                    <div class="subtext">unit numero quatro</div>
+                    <div class="subtext">numero quat</div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- ================================== -->
+    <!--             SECTION 2              -->
+    <!-- ================================== -->
 
     <div class="sec2">
         <div class="content">
@@ -62,6 +89,10 @@
             <div class="subquote">-Thor, God of Thunder</div>
         </div>
     </div>
+
+    <!-- ================================== -->
+    <!--             SECTION 3              -->
+    <!-- ================================== -->
 
     <div class="sec3">
         <div class="content">
@@ -77,12 +108,17 @@
         </div>
     </div>
 
+    <!-- ================================== -->
+    <!--              FOOTER                -->
+    <!-- ================================== -->
+
     <footer>
         <div class="content">
             Made with 💙 by Rafa 2022
         </div>
     </footer>
 
+    <!-- VANTA JS BIRDS BACKGROUND ANIMATION -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <script>
@@ -99,9 +135,12 @@
       color2: 0x1F2937,
       quantity: 3.00,
       backgroundAlpha: 0.00,
-      speedLimit: 2.00,
+      speedLimit: 4.00,
       birdSize: 1.50
     })
     </script>
+
+    <!-- DARK MODE SCRIPT -->
+    <script src="darkmode.js"></script>
 </body>
 </html>

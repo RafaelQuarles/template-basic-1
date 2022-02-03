@@ -91,6 +91,7 @@ nav {
     display: flex;
     gap: 2rem;
     margin: auto 0;
+    padding-right: 50px;
 }
 .link {
     text-decoration: none;
@@ -143,7 +144,7 @@ width: 100%;
 .hero .subtitle {
     font-size: 18px;
     color: var(--text-secondary);
-    margin-bottom: 8px;
+    margin-bottom: 18px;
 }
 .hero button {
     background-color: var(--button);
@@ -163,9 +164,18 @@ width: 100%;
 }
 
 @media (max-width: 767.98px) {
+    .hero {
+        padding-top: 1rem;
+    }
     .hero > .content {
-        display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .hero .title {
+        font-size: 32px;
+    }
+    .hero .subtitle {
+        font-size: 22px;
     }
 }
 /* ----------- */
@@ -243,7 +253,6 @@ width: 100%;
 }
 @media (max-width: 767.98px) {
     .sec2 {
-        background-color: var(--bgcolor-quote);
         padding: 80px 20px;
     }
     .sec2 .quote {
@@ -261,13 +270,13 @@ width: 100%;
 /* section three */
 .sec3 {
     color: var(--text-primary);
+    padding: 40px 0;
 }
 .sec3 .container {
     background-color: var(--tirtiary);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 40px 0;
     padding: 50px 100px;
     border-radius: 12px;
 }
